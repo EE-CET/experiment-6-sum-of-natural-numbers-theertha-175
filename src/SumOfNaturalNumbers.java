@@ -1,12 +1,14 @@
+import java.util.Scanner;
+
 public class SumOfNaturalNumbers {
 
-    // TODO: Create the method public static int NumberSum(int n)
-    // It should calculate and return the sum of first n natural numbers
+    static int NumberSum(int N) {
+        return N * (N + 1) / 2;
+    }
 
-
-        // Inside main method
-        // TODO: Read N using Scanner
-        // TODO: Call NumberSum(N)
-        // TODO: Print the result
-    
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int N = sc.nextInt();
+        System.out.print(NumberSum(N));
+    }
 }
